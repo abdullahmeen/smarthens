@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include<iomainip>
 using namespace std;
 int main()
 {
@@ -19,7 +20,7 @@ int main()
         width=width*100.0000;
         height=height*100.0000;
         volume=(1/3.0000)*(length*width*height);
-        cout<<volume<<"  cubic centimeters";
+        cout<< fixed << setprecision(4)<<volume<<"  cubic centimeters";
     }
    else if(output_unit=="millimeters")
     {
@@ -27,13 +28,13 @@ int main()
         width=width*1000.0000;
         height=height*1000.0000;
         volume=(1/3.0000)*(length*width*height);
-        cout<<volume<<"  cubic millimeters";
+        cout<< fixed << setprecision(4)<<volume<<"  cubic millimeters";
     }
     else if(output_unit=="meters")
     {
        
         volume=(1/3.0000)*(length*width*height);
-        cout<<volume<<"  cubic meters";
+        cout<< fixed << setprecision(4)<<volume<<"  cubic meters";
     }
     else if(output_unit=="kilometers")
     {
@@ -41,7 +42,7 @@ int main()
         width=width/1000.0000;
         height=height/1000.0000;
         volume=(1/3.0000)*(length*width*height);
-        cout<<volume<<"  cubic kilometers";
+        cout<< fixed << setprecision(4)<<volume<<"  cubic kilometers";
     }
     else 
     cout<<"invalid input";
